@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloxd Music Converter Vô cùng PRO!! - _WayOld_</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+    <h1>Bloxd Music Converter PRO - _WayOld_</h1>
+    <h2>Join ".land-survival." to Listen & survival</h2>
+    <h2>Join ".land-pvp." to PvP</h2>
+
+    <div class="version">
+        Vơ (ver): 1.0
+    </div>
+</div>
+
+    <div class="drop-area">
+
+        <h2>📂 Kéo cái File Midi vô đây</h2>
+
+        <p>Hoặc click "N_T_Phat" để lấy ":D</p>
+
+        <button id="browseBtn">
+            N_T_Phat
+        </button>
+
+        <input
+    type="file"
+    id="midiFile"
+    accept=".mid,.midi"
+    hidden>
+
+    </div>
+
+    <div class="info">
+
+    <h3>File Information</h3>
+    <div class="track-card">
+
+    <h3>🎼 MIDI Tracks</h3>
+
+    <div id="trackList">
+
+        <p>chưa có MIDI nào được tải lên</p>
+
+    </div>
+    <div class="note-card">
+
+    <h3>🎵 Nốt</h3>
+
+    <div id="noteList">
+
+        Chọn track gì đó...
+
+    </div>
+
+</div>
+
+</div>
+
+    <p id="fileName">
+
+        Chưa có file nào được chọn
+
+    </p>
+
+    <p id="fileSize">
+
+        Kích thước Midi : -
+
+    </p>
+
+    <div class="info-row">
+    <span>Tracks</span>
+    <span id="trackCount">-</span>
+</div>
+
+<div class="info-row">
+    <span>Tempo</span>
+    <span id="tempo">-</span>
+</div>
+
+<div class="info-row">
+    <span>Thời lượng</span>
+    <span id="duration">-</span>
+</div>
+
+    <p id="status">
+    <span class="status-chip loading">Loading...</span>
+    </p>
+
+</div>
+
+    <div class="options"></div>
+
+    <div class="progress-container">
+    <div class="progress-bar"></div>
+    </div>
+
+    <h3>Đầu ra | Output</h3>
+
+<textarea id="output"></textarea>
+
+    <div class="button-group">
+
+    <button id="copyBtn">
+
+        📋 Copy Code
+
+    </button>
+
+    <button id="convertBtn">
+
+        Convert | Tui chưa thêm chức năng convert đâu nha
+
+    </button>
+
+<script src="https://cdn.jsdelivr.net/npm/@tonejs/midi/build/Midi.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
