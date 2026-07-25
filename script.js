@@ -61,7 +61,7 @@ function convertMidiToSongEvents(midi){
 
             songEvents.push({
 
-    a:Math.round(note.time*1000)
+    a:Math.round(note.time*1000),
     b:note.midi
 
 });
