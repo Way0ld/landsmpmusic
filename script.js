@@ -61,10 +61,10 @@ function convertMidiToSongEvents(midi){
 
             songEvents.push({
 
-                a:+note.time.toFixed(3),
-                b:note.midi
+    a:Math.round(note.time*1000)
+    b:note.midi
 
-            });
+});
 
         });
 
